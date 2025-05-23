@@ -18,7 +18,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(creds_json, scope)
 client = gspread.authorize(creds)
 
 # connect to google sheet
-sheet = client.open("streamlit test").sheet1  # Replace with your Sheet name
+sheet = client.open("mood logger").sheet1  # Replace with your Sheet name
 
 # streamlit app
 st.title("What's the Vibe?")
